@@ -30,7 +30,7 @@ ifeq ($(CONFIG_ARCH_RV64I),y)
 
 # workaround for C906 ldd performance issue
 ifeq ($(CONFIG_ARCH_CVITEK),y)
-	KBUILD_CFLAGS += -mno-ldd
+#	KBUILD_CFLAGS += -mno-ldd
 endif
 
 	KBUILD_LDFLAGS += -melf64lriscv
